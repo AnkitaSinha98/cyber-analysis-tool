@@ -1,0 +1,92 @@
+.Appx {
+  color: rgb(255, 255, 255);
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  min-height: 94vh;
+  background-position: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Apps {
+  color: rgb(0, 0, 0);
+  font-family: "Courier New", Courier, monospace;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Tweet {
+  color: black;
+  background-color: black;
+  text-align: center;
+  line-height: 18px;
+  height: 120px;
+  width: 240px;
+  background-color: rgba(214, 171, 171, 0.685);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px;
+  border-radius: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+.Title {
+  text-size-adjust: initial;
+  text-align: center;
+  font-family: monospace;
+  text-decoration-style: dotted;
+  text-justify: inter-word;
+}
+
+.Like-button {
+  border-radius: 100px;
+  display: inline;
+  min-height: 10px;
+  width: 80px;
+  border: ivory;
+}
+
+.Profile-image {
+  border-radius: 100%;
+  vertical-align: 15px;
+  padding: None;
+}
+
+.BackgroundLayout {
+  background: rgb(67, 105, 211);
+  background: linear-gradient(
+    180deg,
+    rgb(94, 133, 243) 3%,
+    rgb(28, 126, 109) 100%
+  );
+}
+
+.NavCSS {
+  max-height: 100px;
+  background: linear-gradient(
+    180deg,
+    rgb(43, 53, 75),
+    rgba(129, 106, 233, 0.8)
+  );
+}
+
+.Appxx {
+  display: flex;
+  flex: content;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Layout {
+  background: rgb(61, 102, 182);
+  background: linear-gradient(
+    180deg,
+    rgba(61, 102, 182, 1) 20%,
+    rgba(9, 113, 152, 1) 46%,
+    rgba(97, 189, 232, 1) 85%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
