@@ -28,7 +28,7 @@ class ScanFile extends React.Component{
     }
 
 render(){
-    const {searchTitle} = this.state;
+    const {searchTitle,scanresult} = this.state;
     return(
         <div className="Apps">
             <div>
@@ -46,32 +46,54 @@ render(){
             onClick={this.searchTitle}
             >Search</button>
             </div>
-            {/* <div>
-            {
-            this.state.scanresult.map((scan =>
-              <th key={`${scan.scan_id}`}>
-              <div>
-              <div>
-                {scan.resource}
-                <div>
-                  {
-                    scan.scans.map(d => (
-                      <div>
-                        {d.Bkav}
-                      </div>
-                    ))
-                  }
-                </div>
-              </div>
+            <div>
             </div>
-          </th>
-        ))
-      }
-    </div> */}
-        </div>
-    );
-}
 
-}
+            <div className = "Appx">
+            <div> Response Id : {scanresult.response_code} </div>
+        
+            <div> Message : {scanresult.verbose_msg}</div>
+{/* 
+
+            <table className ="table table-striped">
+                <thead>
+                    <tr>
+                        <td > Response Id </td>
+                        <td> Message </td>
+                        <td> Scan ID </td>
+                        <td> Scan Date</td>
+                        <td> Resource </td>
+                        <td> SHA 1 </td>
+                        <td> SHA 256 </td>
+                        <td> MD 5 </td>
+                        <td> Total Engines </td>
+                        <td> Total Engine Detected </td>
+                        <td> PermaLink </td>
+                        <td>Scan </td>
+                    </tr>
+                </thead>
+                <tbody>
+                            <tr>
+                                <td> Response Id : {scanresult.response_code} </td>
+                                <td> Message : {scanresult.verbose_msg}</td>
+                                <td> {scanresult.scan_id} </td>
+                                <td> {scanresult.scan_date} </td>
+                                <td> {scanresult.resource}</td>
+                                <td> {scanresult.sha1} </td>
+                                <td> {scanresult.sha256} </td>
+                                <td> {scanresult.md5} </td>
+                                <td> {scanresult.tottal} </td>
+                                <td> {scanresult.positives} </td>
+                                <td> {scanresult.permalink} </td>
+                                <td> {scanresult.scan} </td>
+                            </tr>
+                        
+                </tbody>
+            </table> */}
+</div>
+        </div>
+    )
+
+}}
 
 export default ScanFile;
