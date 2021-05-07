@@ -61,11 +61,11 @@ render(){
             <hr />
             <div> Resource: {scanresult.resource} </div>
             <hr />
-            <div> SHA 1 : {scanresult.sha1} </div>
+            <div> SHA1 : {scanresult.sha1} </div>
             <hr />
-            <div> SHA 256 : {scanresult.sha256} </div>
+            <div> SHA256 : {scanresult.sha256} </div>
             <hr />
-            <div> MD 5 : {scanresult.md5} </div>
+            <div> MD5 : {scanresult.md5} </div>
             <hr />
             <div> Total Engines : {scanresult.total} </div>
             <hr />

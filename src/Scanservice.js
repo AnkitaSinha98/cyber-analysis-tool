@@ -13,6 +13,12 @@ class Scanservice{
     scanIPService(ipaddress){
         return http.get(`/ip-address/report?apikey=a8b91d89b9ce8fbf22e71076e62927898c20c8569ce3b91a051ed8df179c18d4&ip=${ipaddress}`);
     }
+
+    // https://www.virustotal.com/vtapi/v2/domain/report?apikey=a8b91d89b9ce8fbf22e71076e62927898c20c8569ce3b91a051ed8df179c18d4&domain=.com
+
+    scanDomainService(domain){
+        return http.get(`/domain/report?apikey=a8b91d89b9ce8fbf22e71076e62927898c20c8569ce3b91a051ed8df179c18d4&domain=${domain}`);
+    }
 }
 
 export default new Scanservice();

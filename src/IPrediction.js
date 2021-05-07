@@ -8,9 +8,13 @@ class IPrediction extends React.Component{
         super(props);
         this.onChangeSearch=this.onChangeSearch.bind(this);
         this.searchTitle=this.searchTitle.bind(this);
+        this.onChangeSearchd=this.onChangeSearchd.bind(this);
+        this.searchTitled=this.searchTitled.bind(this);
         this.state = {
             scanresult:[],
-            searchTitle:""
+            searchTitle:"",
+            scanresultd:[],
+            searchTitled:""
         }
     }
 
@@ -28,10 +32,24 @@ class IPrediction extends React.Component{
         });
     }
 
+    onChangeSearchd(e){
+        const searchTitled =e.target.value;
+        this.setState({
+            searchTitled:searchTitled
+        });
+    }
+
+    searchTitled(){
+        Scanservice.scanDomainService(this.state.searchTitled).then(response => {
+            this.setState({ scanresultd: response.data})
+                console.log("scanresult domain", this.state.scanresultd)
+        });
+    }
+
 render(){
-    const {searchTitle, scanresult} = this.state;
+    const {searchTitle,scanresult,searchTitled,scanresultd} = this.state;
     return(
-        
+        <div>
         <div className="relative flex justify-center pt-12 lg:pt-30 px-8 py-10">
         <div className="rounded-lg shadow-2xl p-20 form">
         <label className="text-2xl text-white-100 font-bold cursive">Enter any I.P address</label>
@@ -45,7 +63,23 @@ render(){
         <div>ASN: {scanresult.asn}</div>
         <div>Dataset: {scanresult.verbose_msg}</div>
         </div>
-        </div>      
+        </div>
+        
+        <div className="relative flex justify-center pt- lg:pt-30 px-8 py-10">
+        <div className="rounded-lg shadow-2xl p-20 form">
+        <label className="text-2xl text-white-100 font-bold cursive">Enter any Domain address</label>
+        <input placeholder="Enter any Domain address" value={searchTitled} onChange={this.onChangeSearchd}/>
+        <button type="submit" className="text-3xl text-white-100 cursive" onClick={this.searchTitled}>Search</button>
+        </div>
+        <div className="rounded-lg shadow-3xl p-20 ml-10 form ">
+        <label className="text-2xl text-white-100 font-bold cursive">Domain Address details</label>
+        <div>Category: {scanresultd.BitDefendercategory}</div>
+        <div>Owner: {scanresultd.as_owner}</div>
+        <div>ASN: {scanresultd.asn}</div>
+        <div>Dataset: {scanresultd.verbose_msg}</div>
+        </div>
+        </div>
+        </div>
     )
 
 }}
