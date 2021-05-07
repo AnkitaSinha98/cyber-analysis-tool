@@ -30,26 +30,15 @@ class ScanFile extends React.Component{
 render(){
     const {searchTitle,scanresult} = this.state;
     return(
-        <div className="Apps">
-            <div>
-            <input
-            type="text-color black"
-            placeholder="Search"
-            value={searchTitle}
-            onChange={this.onChangeSearch}
-           />
-           </div>
-           <div>
-            <button
-            className = "btn btn-outline-secondary"
-            type = "button"
-            onClick={this.searchTitle}
-            >Search</button>
-            </div>
-            <div>
-            </div>
-
-            <div className = "Appx">
+        <div>
+        <div className="relative flex justify-center pt-12 lg:pt-30 px-8 py-10">
+        <div className="rounded-lg shadow-2xl p-20 form">
+        <label className="text-3xl text-white-100 font-bold cursive">Enter hash code</label>
+        <input placeholder="Enter hash value" value={searchTitle} onChange={this.onChangeSearch}/>
+        <button type="submit" className="text-4xl text-white-100 cursive" onClick={this.searchTitle}>Scan</button>
+        </div>
+        </div>
+            <div className = "Appscan">
             <hr />  
             <div> Response Id : {scanresult.response_code} </div>
             <hr />

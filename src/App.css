@@ -1,5 +1,5 @@
 .Appx {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-family: "Courier New", Courier, monospace;
   text-align: center;
   min-height: 94vh;
@@ -9,6 +9,19 @@
   align-items: center;
   white-space: pre-wrap;
   padding-bottom: 50px;
+}
+
+.Appscan {
+  color: rgb(255, 255, 255);
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  min-height: 94vh;
+  padding-left: 25%;
+  padding-right: 25%;
+  display: block;
+  padding-top: 100px;
+  white-space: pre-wrap;
+  align-items: center;
 }
 
 .Apps {
@@ -58,11 +71,11 @@
 }
 
 .BackgroundLayout {
-  background: rgb(67, 105, 211);
+  background: rgba(18, 36, 85, 0.685);
   background: linear-gradient(
     180deg,
-    rgb(94, 133, 243) 3%,
-    rgb(28, 126, 109) 100%
+    rgb(23, 97, 167) 3%,
+    rgb(95, 255, 228) 100%
   );
 }
 
@@ -70,8 +83,8 @@
   max-height: 100px;
   background: linear-gradient(
     180deg,
-    rgb(43, 53, 75),
-    rgba(129, 106, 233, 0.8)
+    rgb(18, 28, 53),
+    rgba(23, 97, 167, 0.836) 3%
   );
 }
 
