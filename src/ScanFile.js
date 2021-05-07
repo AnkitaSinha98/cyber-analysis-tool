@@ -50,47 +50,29 @@ render(){
             </div>
 
             <div className = "Appx">
+            <hr />  
             <div> Response Id : {scanresult.response_code} </div>
-        
-            <div> Message : {scanresult.verbose_msg}</div>
-{/* 
-
-            <table className ="table table-striped">
-                <thead>
-                    <tr>
-                        <td > Response Id </td>
-                        <td> Message </td>
-                        <td> Scan ID </td>
-                        <td> Scan Date</td>
-                        <td> Resource </td>
-                        <td> SHA 1 </td>
-                        <td> SHA 256 </td>
-                        <td> MD 5 </td>
-                        <td> Total Engines </td>
-                        <td> Total Engine Detected </td>
-                        <td> PermaLink </td>
-                        <td>Scan </td>
-                    </tr>
-                </thead>
-                <tbody>
-                            <tr>
-                                <td> Response Id : {scanresult.response_code} </td>
-                                <td> Message : {scanresult.verbose_msg}</td>
-                                <td> {scanresult.scan_id} </td>
-                                <td> {scanresult.scan_date} </td>
-                                <td> {scanresult.resource}</td>
-                                <td> {scanresult.sha1} </td>
-                                <td> {scanresult.sha256} </td>
-                                <td> {scanresult.md5} </td>
-                                <td> {scanresult.tottal} </td>
-                                <td> {scanresult.positives} </td>
-                                <td> {scanresult.permalink} </td>
-                                <td> {scanresult.scan} </td>
-                            </tr>
-                        
-                </tbody>
-            </table> */}
-</div>
+            <hr />
+            <div> Message : {scanresult.verbose_msg} </div>
+            <hr />
+            <div> Scan ID : {scanresult.scan_id} </div>
+            <hr />
+            <div> Scan Date : {scanresult.scan_date} </div>
+            <hr />
+            <div> Resource: {scanresult.resource} </div>
+            <hr />
+            <div> SHA 1 : {scanresult.sha1} </div>
+            <hr />
+            <div> SHA 256 : {scanresult.sha256} </div>
+            <hr />
+            <div> MD 5 : {scanresult.md5} </div>
+            <hr />
+            <div> Total Engines : {scanresult.total} </div>
+            <hr />
+            <div> Total Engine Detected : {scanresult.positives} </div>
+            <hr />
+            <div> Scan : {scanresult.scan} </div>
+        </div>
         </div>
     )
 

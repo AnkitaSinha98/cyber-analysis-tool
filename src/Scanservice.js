@@ -8,7 +8,11 @@ class Scanservice{
         return http.get(`/file/report?apikey=a8b91d89b9ce8fbf22e71076e62927898c20c8569ce3b91a051ed8df179c18d4&resource=${hash}`);
     }
 
+    // https://www.virustotal.com/vtapi/v2/ip-address/report?apikey=a8b91d89b9ce8fbf22e71076e62927898c20c8569ce3b91a051ed8df179c18d4&ip=192.168.100.3
     
+    scanIPService(ipaddress){
+        return http.get(`/ip-address/report?apikey=a8b91d89b9ce8fbf22e71076e62927898c20c8569ce3b91a051ed8df179c18d4&ip=${ipaddress}`);
+    }
 }
 
 export default new Scanservice();

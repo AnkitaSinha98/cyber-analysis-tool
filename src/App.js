@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css"
 import Scan from "./ScanFile";
 import Home from "./Home";
-import Prediction from "./Prediction";
+import Prediction from "./IPrediction";
 import Analyse from "./Analyse";
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 import NavBar from "../src/NavBar";

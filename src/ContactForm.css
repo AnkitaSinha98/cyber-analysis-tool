@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(248, 246, 253);
+}
+
+/* Contact.js */
+.form {
+  height: 20vh;
+  width: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+}
+
+.form > input,
+textarea {
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  border: 1px solid lightgray;
+  background: #fff;
+}
+
+.form > input:focus,
+textarea:focus {
+  border: 1px solid rgb(0, 0, 196);
+}
+
+.form > textarea {
+  height: 150px;
+  max-width: 100px;
+  min-height: 100px;
+}
+
+.form > label {
+  padding-bottom: 10px;
+  color: rgb(0, 0, 32);
+  font-weight: bold;
+}
+
+.form > button {
+  background-color: rgb(42, 42, 71);
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-top: 10px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.form > button:hover {
+  background-color: rgb(0, 0, 196);
+}

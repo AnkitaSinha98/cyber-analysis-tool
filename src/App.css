@@ -4,9 +4,11 @@
   text-align: center;
   min-height: 94vh;
   background-position: 10%;
-  display: flex;
+  display: block;
   justify-content: space-around;
   align-items: center;
+  white-space: pre-wrap;
+  padding-bottom: 50px;
 }
 
 .Apps {
