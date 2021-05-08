@@ -2,14 +2,13 @@ import React from "react";
 import "./App.css"
 import Scan from "./ScanFile";
 import Home from "./Home";
-import Prediction from "./IPrediction";
+import Monitoring from "./Monitoring";
 import Analyse from "./Analyse";
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 import NavBar from "../src/NavBar";
 
 
-function App(){
-    
+const App = () => {
 
   return(
     <body>
@@ -20,19 +19,15 @@ function App(){
       <Switch>
       <Route component ={Home} path='/' exact/>
       <Route component ={Scan} path='/scan'/> ;
-      <Route component ={Prediction} path='/prediction/'/>
+      <Route component ={Monitoring} path='/monitoring/'/>
       <Route component ={Analyse} path='/analyse'/>
+
   </Switch>
-
-
-
       </div>
-    <footer> Developed  by  Soumadeep ❤ </footer>
+      <div className="footer">Developed  by  Soumadeep ❤ </div>
     </BrowserRouter>
 
     </body> 
-
-    
   );
 }
 

@@ -3,7 +3,7 @@ import Scanservice from './Scanservice';
 import "../src/ContactForm.css";
 
 
-class IPrediction extends React.Component{
+class Monitoring extends React.Component{
     constructor(props){
         super(props);
         this.onChangeSearch=this.onChangeSearch.bind(this);
@@ -83,4 +83,4 @@ render(){
 
 }}
 
-export default IPrediction;
+export default Monitoring;

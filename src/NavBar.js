@@ -17,15 +17,20 @@ export default function NavBar(){
                     className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-100 text-3xl font-bold cursive">
                     Scan
                     </NavLink>
-                    <NavLink to = "/prediction" 
+                    <NavLink to = "/monitoring" 
                     activeClassName="text-red-100 bg-gray-600"    
                     className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-100  text-3xl font-bold cursive">
-                    Prediction
+                    Monitoring
                     </NavLink>
                     <NavLink to = "/analyse" 
                     activeClassName="text-red-100 bg-gray-600"
                     className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-100 text-3xl font-bold cursive">
                     Analyse 
+                    </NavLink>
+                    <NavLink to = "/prediction" 
+                    activeClassName="text-red-100 bg-gray-600"
+                    className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-100 text-3xl font-bold cursive">
+                    Prediction 
                     </NavLink>
                 </nav>
 

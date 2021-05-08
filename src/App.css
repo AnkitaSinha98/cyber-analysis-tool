@@ -87,14 +87,39 @@
     rgba(23, 97, 167, 0.836) 3%
   );
 }
-
 .Appxx {
   display: flex;
   flex: content;
   justify-content: space-around;
   align-items: center;
 }
+.footer {
+  height: 10px;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(223, 223, 223);
+}
 
+.bot {
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  width: 280px;
+}
+
+.btn {
+  font-size: 15px;
+  float: right;
+  width: 100%;
+  padding: 8px;
+  border-radius: 10px;
+  background: rgb(132, 149, 182);
+  background: linear-gradient(
+    180deg,
+    rgb(197, 198, 199) 46%,
+    rgb(69, 79, 83) 85%
+  );
+}
 .Layout {
   background: rgb(61, 102, 182);
   background: linear-gradient(

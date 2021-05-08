@@ -60,7 +60,6 @@ render(){
             <hr />
             <div> Total Engine Detected : {scanresult.positives} </div>
             <hr />
-            <div> Scan : {scanresult.scan} </div>
         </div>
         </div>
     )
