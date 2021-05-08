@@ -53,7 +53,7 @@ render(){
         <div className = "Appx">
         <div className="relative flex justify-center pt-12 lg:pt-30 px-8 py-10">
         <div className="rounded-lg shadow-2xl p-20 form">
-        <label className="text-3xl text-white-100 font-bold cursive">Enter any I.P address</label>
+        <label className="text-3xl text-white-100 font-bold cursive">I.P address</label>
         <input placeholder="Enter any I.P address" value={searchTitle} onChange={this.onChangeSearch}/>
         <button type="submit" className="text-3xl text-white-100 cursive" onClick={this.searchTitle}>Search</button>
         </div>
@@ -68,16 +68,14 @@ render(){
         
         <div className="relative flex justify-center pt- lg:pt-30 px-8 py-10">
         <div className="rounded-lg shadow-2xl p-20 form">
-        <label className="text-3xl text-white-100 font-bold cursive">Enter any Domain address</label>
+        <label className="text-3xl text-white-100 font-bold cursive">Domain address</label>
         <input placeholder="Enter Domain address" value={searchTitled} onChange={this.onChangeSearchd}/>
         <button type="submit" className="text-3xl text-white-100 cursive" onClick={this.searchTitled}>Search</button>
         </div>
         <div className="rounded-lg shadow-3xl p-20 ml-10 form ">
         <label className="text-3xl text-white-100 font-bold cursive">Domain Address details</label>
-        <div>Category: {scanresultd.BitDefendercategory}</div>
-        <div>Owner: {scanresultd.BitDefendercategory}</div>
-        <div>ASN: {scanresultd.asn}</div>
-        <div>Dataset: {scanresultd.verbose_msg}</div>
+        <div>Info: {scanresultd["Alexa domain info"]}</div>
+        <div>Category: {scanresultd["sophos category"]}</div>
         </div>
         </div>
         </div>

@@ -14,7 +14,7 @@ function App(){
   return(
     <body>
       <BrowserRouter>
-      <h1 className="Title">Signature based Malware Detection Analysis </h1>
+      <h1 className="Title">Cyber Analysis Tool for Malware Detection and Prediction </h1>
       <div className = "BackgroundLayout"> 
       <NavBar/>
       <Switch>
