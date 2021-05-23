@@ -79,3 +79,11 @@ nav {
   transform: translateY(100%);
   display: inline-block;
 }
+
+.myImage {
+  max-width: 500px;
+  background-repeat: no-repeat;
+  background-size: 25%;
+  display: inline-table;
+  flex: initial;
+}

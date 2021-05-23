@@ -108,17 +108,7 @@
 }
 
 .btn {
-  font-size: 15px;
-  float: right;
-  width: 100%;
-  padding: 8px;
-  border-radius: 10px;
-  background: rgb(132, 149, 182);
-  background: linear-gradient(
-    180deg,
-    rgb(197, 198, 199) 46%,
-    rgb(69, 79, 83) 85%
-  );
+  background-image: url("../src/iconchat.jpg");
 }
 .Layout {
   background: rgb(61, 102, 182);
