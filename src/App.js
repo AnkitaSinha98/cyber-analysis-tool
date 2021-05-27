@@ -4,6 +4,7 @@ import Scan from "./ScanFile";
 import Home from "./Home";
 import Monitoring from "./Monitoring";
 import Analyse from "./Analyse";
+import Browsing from "./Browsing";
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 import NavBar from "../src/NavBar";
 
@@ -21,6 +22,7 @@ const App = () => {
       <Route component ={Scan} path='/scan'/> ;
       <Route component ={Monitoring} path='/monitoring/'/>
       <Route component ={Analyse} path='/analyse'/>
+      <Route component = {Browsing} path='/safebrowsing'/>
 
   </Switch>
       </div>

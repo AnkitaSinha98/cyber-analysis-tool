@@ -32,6 +32,12 @@ export default function NavBar(){
                     className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-100 text-3xl font-bold cursive">
                     Prediction 
                     </NavLink>
+                    <NavLink to = "/safebrowsing" 
+                    activeClassName="text-red-100 bg-gray-600"
+                    className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-100 text-3xl font-bold cursive">
+                    Safe Browsing 
+                    </NavLink>
+
                 </nav>
 
             </div>
