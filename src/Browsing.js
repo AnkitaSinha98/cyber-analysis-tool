@@ -1,5 +1,10 @@
 import React from "react";
 import Scanservice from "./Scanservice";
+import exportFromJSON from "export-from-json";
+import "../src/App.css";
+
+const fileName = "exportfile";
+const exportType = "txt";
 
 class Browsing extends React.Component {
   constructor(props) {
@@ -26,10 +31,17 @@ class Browsing extends React.Component {
     });
   }
 
+  ExportToExcel = () => {
+    const { scanresult } = this.state;
+    console.log("Scan result Export", scanresult);
+    const data = JSON.stringify(scanresult);
+    exportFromJSON({ data, fileName, exportType });
+  };
+
   //http://malware.testing.google.test/testing/malware/ ---> Malware Site
   render() {
     const { searchTitle, scanresult } = this.state;
-    const fr = scanresult;
+    const fr = JSON.stringify(scanresult);
     console.log("Scan result fr", fr);
 
     return (
@@ -53,7 +65,17 @@ class Browsing extends React.Component {
             </button>
           </div>
         </div>
-        <div className="Appscan"></div>
+        <div className="Appscan">
+          <div>
+            <button
+              type="submit"
+              className="text-4xl text-black cursive"
+              onClick={this.ExportToExcel}
+            >
+              Export Data
+            </button>
+          </div>
+        </div>
       </div>
     );
   }
