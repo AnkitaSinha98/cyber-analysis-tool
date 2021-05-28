@@ -37,11 +37,11 @@ export default function NavBar() {
             Analyse
           </NavLink>
           <NavLink
-            to="/prediction"
+            to="/dns"
             activeClassName="text-red-100 bg-gray-600"
             className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-100 text-3xl font-bold cursive"
           >
-            Prediction
+            DNS
           </NavLink>
           <NavLink
             to="/safebrowsing"
@@ -49,6 +49,13 @@ export default function NavBar() {
             className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-100 text-3xl font-bold cursive"
           >
             Safe Browsing
+          </NavLink>
+          <NavLink
+            to="/prediction"
+            activeClassName="text-red-100 bg-gray-600"
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-100 text-3xl font-bold cursive"
+          >
+            Prediction
           </NavLink>
         </nav>
       </div>
