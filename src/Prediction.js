@@ -22,9 +22,7 @@ class Prediction extends React.Component {
                   multiple="multiple"
                   class="text-l text-black"
                 />
-                <button class="mt-10 text-4xl text-black cursive">
-                  Start Detection
-                </button>
+                <button class="mt-10 text-4xl text-black cursive">Start</button>
               </div>
             </div>
           </form>
