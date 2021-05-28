@@ -56,6 +56,7 @@ export default function Radarchart() {
       width={600}
       height={600}
       data={data}
+      PolarGrid={1}
     >
       <PolarGrid />
       <PolarAngleAxis dataKey="subject" />
