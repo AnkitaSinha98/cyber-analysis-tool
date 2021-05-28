@@ -4,73 +4,74 @@ import { RadialBarChart, RadialBar, Legend } from "recharts";
 
 const data = [
   {
-    name: "18-24",
-    uv: 31.47,
-    fill: "#8884d8",
+    name: "Regression",
+    percent: 52.80,
+    fill: "#FF8042",
   },
   {
-    name: "25-29",
-    uv: 26.69,
-    fill: "#83a6ed",
+    name: "GNB",
+    percent: 70.17,
+    fill: "#00C49F",
   },
   {
-    name: "30-34",
-    uv: 15.69,
-    fill: "#8dd1e1",
+    name: "K-NN",
+    percent: 95.59,
+    fill: "#ffc658",
   },
   {
-    name: "35-39",
-    uv: 8.22,
-    fill: "#82ca9d",
-  },
-  {
-    name: "40-49",
-    uv: 8.63,
+    name: "AdaBoost",
+    percent: 98.63,
     fill: "#a4de6c",
   },
   {
-    name: "50+",
-    uv: 2.63,
-    fill: "#d0ed57",
+    name: "Gradient Boosting",
+    percent: 98.79,
+    fill: "#82ca9d",
   },
   {
-    name: "unknown",
-    uv: 6.67,
-    fill: "#ffc658",
+    name: "Decision Tree",
+    percent: 98.96,
+    fill: "#C990E2",
   },
+  {
+    name: "Random Forest",
+    percent: 99.33,
+    fill: "#52ECDD",
+  },
+
 ];
 
 const style = {
   top: 0,
   left: 350,
-  lineHeight: "24px",
+  lineHeight: "20px",
 };
 
 export default function Barchart() {
   return (
     <RadialBarChart
-      width={500}
+      width={550}
       height={300}
       cx={150}
       cy={150}
-      innerRadius={20}
+      innerRadius={30}
       outerRadius={140}
-      barSize={10}
+      barSize={12}
       data={data}
     >
       <RadialBar
         minAngle={15}
-        label={{ position: "insideStart", fill: "#fff" }}
+        label={{ position: "insideStart", fill: "#000000"}}
         background
         clockWise
-        dataKey="uv"
+        dataKey="percent"
       />
       <Legend
-        iconSize={10}
-        width={120}
-        height={140}
+        iconSize={10  }
+        width={160}
+        height={150}
         layout="vertical"
-        verticalAlign="middle"
+        verticalAlign= "middle"
         wrapperStyle={style}
       />
     </RadialBarChart>

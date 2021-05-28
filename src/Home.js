@@ -2,12 +2,13 @@ import React ,{useState} from 'react';
 import SimpleForm from './SimpleForm';
 import "../src/style.css";
 import gsap from "gsap";
-import logo1 from "../src/11.jpg";
-import logo2 from "../src/22.png";
-import logo3 from "../src/33.jpg";
-import logo4 from "../src/44.png";
-import logo5 from "../src/55.jpeg";
-import icon from "../src/chat.png";
+import logo1 from "../src/Font0.gif";
+// import logo1 from "../src/11.jpg";
+import logo2 from "../src/font1.gif";
+import logo3 from "../src/font3.gif";
+import logo4 from "../src/font5.gif";
+import logo5 from "../src/font4.gif";
+import icon from "../src/chatbot.gif";
 
 
 
