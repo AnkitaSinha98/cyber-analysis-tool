@@ -3,7 +3,8 @@ import "./App.css";
 import Scan from "./ScanFile";
 import Home from "./Home";
 import Monitoring from "./Monitoring";
-import Analyse from "./Analyse";
+//import Analyse from "./Analyse";
+import Mobsf from "./Mobsf";
 import Browsing from "./Browsing";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import NavBar from "../src/NavBar";
@@ -23,7 +24,7 @@ const App = () => {
             <Route component={Home} path="/" exact />
             <Route component={Scan} path="/scan" /> ;
             <Route component={Monitoring} path="/monitoring/" />
-            <Route component={Analyse} path="/analyse" />
+            <Route component={Mobsf} path="/mobsf" />
             <Route component={Browsing} path="/safebrowsing" />
             <Route component={Domain} path="/dns" />
             <Route component={Prediction} path="/prediction" />
