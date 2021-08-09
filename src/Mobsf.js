@@ -104,7 +104,7 @@ class Mobsf extends React.Component {
             >
               <input type="file" onChange={this.onChange} />
               <br />
-              <button type="submit" className=" ml-20 text-2xl cursive">
+              <button type="submit" className=" ml-20 text-3xl pt-5 cursive">
                 Upload
               </button>
             </form>

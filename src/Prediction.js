@@ -15,10 +15,11 @@ class Prediction extends React.Component {
             enctype="multipart/form-data"
             id="myFile"
           >
-            <div class="rounded-lg shadow-2xl p-35 form">
-            <label className="text-2xl text-white-100 font-bold cursive">
-              PE Format Malware Checker
-            </label>
+            <div class="rounded-lg shadow-2xl p-30 form">
+              <label className="text-4xl text-white-100 font-bold cursive">
+                PE Malware Checker
+              </label>
+              <br />
               <div class="body" id="drop">
                 <input
                   type="file"
@@ -26,7 +27,9 @@ class Prediction extends React.Component {
                   multiple="multiple"
                   class="text-l text-black"
                 />
-                <button class="mt-10 text-3xl text-black cursive">Start</button>
+                <br />
+                <br />
+                <button class=" text-3xl text-black cursive">Start</button>
               </div>
             </div>
           </form>

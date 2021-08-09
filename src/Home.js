@@ -27,18 +27,22 @@ const Home = (props) => {
   return (
     <div>
       <div className="Appx">
-        <div className="text-2xl pt-20 text-white-100 font-bold gap-12">
-          <h1>
-            We intend to develop malware detection and analysis using third-party API. <br/>
-            A machine learning framework is used to predict malware PE formet file using a neural network model. <br/>
-            Objective is to develop a one-stop solution with latest and robust technology for cyber-attacks detection and prevention. <br/>
-          </h1>
-        </div>
+        <div className="text-2xl pt-20 text-white-100 font-bold gap-12"></div>
         <div className="ml-10 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           <img src={logo1} alt="logo1" className="myImage" />
           <img src={logo2} alt="logo2" className="myImage" />
           <img src={logo3} alt="logo3" className="myImage" />
         </div>
+
+        <h1 className="mt-20 text-white-100 text-4xl cursive">
+          We intend to develop malware detection and analysis using third-party
+          API. <br />
+          A machine learning framework is used to predict malware PE format file
+          using a neural network model. 
+          <br />
+          Objective is to develop a one-stop solution with latest and robust
+          technology for cyber-attacks detection and prevention. <br />
+        </h1>
       </div>
       <div className="bot">
         <div style={{ display: showChat ? "" : "none" }}>
