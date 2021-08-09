@@ -51,7 +51,7 @@ class Mobsf extends React.Component {
       headers: {
         "content-type": "multipart/form-data",
         Authorization:
-          "02b7ed9b81771c4cfde3c70100fa66bd1150dcc9894613349ed2bf7818a583a1",
+          "9c80958b09321e399258024c72defe8336bc4e3e3f3fdf9b2f619ca38e5e8978",
       },
     };
 
@@ -69,7 +69,7 @@ class Mobsf extends React.Component {
       headers: {
         "content-type": "application/json",
         Authorization:
-          "02b7ed9b81771c4cfde3c70100fa66bd1150dcc9894613349ed2bf7818a583a1",
+          "9c80958b09321e399258024c72defe8336bc4e3e3f3fdf9b2f619ca38e5e8978",
       },
     };
 
@@ -98,15 +98,19 @@ class Mobsf extends React.Component {
             <label className="text-3xl text-white-100 font-bold cursive">
               Mobsf Scan
             </label>
-            <form onSubmit={this.onFormSubmit}>
+            <form
+              onSubmit={this.onFormSubmit}
+              className="ml-20 text-l text-white-100 "
+            >
               <input type="file" onChange={this.onChange} />
+              <br />
+              <button type="submit" className=" ml-20 text-2xl cursive">
+                Upload
+              </button>
             </form>
-            <button type="submit" className="text-l text-white-100 cursive ">
-              Upload
-            </button>
           </div>
         </div>
-        <div className="Appscan">
+        <div className="Appx ">
           <div>
             <button
               type="submit"
