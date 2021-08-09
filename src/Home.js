@@ -2,12 +2,10 @@ import React, { useState } from "react";
 import SimpleForm from "./SimpleForm";
 import "../src/style.css";
 import gsap from "gsap";
-import logo1 from "../src/Font0.gif";
-import logo2 from "../src/font1.gif";
-import logo3 from "../src/font3.gif";
-import logo4 from "../src/font5.gif";
-import logo5 from "../src/font4.gif";
-import icon from "../src/chatbot.gif";
+import logo1 from "../src/img/font1.gif";
+import logo2 from "../src/img/66.png";
+import logo3 from "../src/img/font5.gif";
+import icon from "../src/img/chatbot.gif";
 
 const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 tl.to(".text", { y: "0%", duration: 1, stagger: 0.25 });
@@ -29,15 +27,17 @@ const Home = (props) => {
   return (
     <div>
       <div className="Appx">
-        <div className="text-5xl pt-20 text-white-100 font-bold cursive"></div>
+        <div className="text-2xl pt-20 text-white-100 font-bold gap-12">
+          <h1>
+            We intend to develop malware detection and analysis using third-party API. <br/>
+            A machine learning framework is used to predict malware PE formet file using a neural network model. <br/>
+            Objective is to develop a one-stop solution with latest and robust technology for cyber-attacks detection and prevention. <br/>
+          </h1>
+        </div>
         <div className="ml-10 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           <img src={logo1} alt="logo1" className="myImage" />
-          <img src={logo5} alt="logo5" className="myImage" />
-          <img src={logo3} alt="logo3" className="myImage" />
-        </div>
-        <div className="mt-20 ml-20 center grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
-          <img src={logo4} alt="logo4" className="myImage" />
           <img src={logo2} alt="logo2" className="myImage" />
+          <img src={logo3} alt="logo3" className="myImage" />
         </div>
       </div>
       <div className="bot">

@@ -14,7 +14,7 @@ from sklearn.metrics import confusion_matrix,recall_score,precision_score, f1_sc
 import json
 
 
-data = pd.read_csv('data.csv', sep='|')
+data = pd.read_csv('../src/templates/data.csv', sep='|')
 X = data.drop(['Name', 'md5', 'legitimate'], axis=1).values
 y = data['legitimate'].values
 
@@ -63,7 +63,7 @@ for algo in algorithms:
     print("%s : %f %%" % (algo, precentage))
     results[algo] = score
 
-with open('barchart.json', 'w') as json_file:
+with open('../src/templates/barchart.json', 'w') as json_file:
     json.dump(results, json_file)
 #print('\n Data saved in json file.....')
 
@@ -83,25 +83,26 @@ res = clf.predict(X_test)
 
 # outcome values order in sklearn
 tp, fn, fp, tn = confusion_matrix(y_test, res,labels=[1,0]).reshape(-1)
-print('tp fn fp tn : \n', tp, fn, fp, tn)
+# print('tp fn fp tn : \n', tp, fn, fp, tn)
 
 # classification report for precision, recall f1-score and accuracy
 matrix = classification_report(y_test, res,labels=[1,0])
-print('Classification report : \n',matrix)
+# print('Classification report : \n',matrix)
  
-print('Classification report : \n',matrix)
+# print('Classification report : \n',matrix)
 precision_positive = precision_score(y_test, res, pos_label=1)
 precision_negative = precision_score(y_test, res, pos_label=0)
-print('True Positive : ',(precision_positive *100))
-print('True Negative: ',(precision_negative *100))
+# print('True Positive : ',(precision_positive *100))
+# print('True Negative: ',(precision_negative *100))
 
 recall_sensitivity = recall_score(y_test, res, pos_label=1)
 recall_specificity = recall_score(y_test, res, pos_label=0)
-print('Sensitivity : ',(recall_sensitivity*100))
-print('Specificity : ',(recall_specificity*100) )
+# print('Sensitivity : ',(recall_sensitivity*100))
+# print('Specificity : ',(recall_specificity*100) )
 
 # confusion matrix
 confusion_matrix = pd.crosstab(y_test, res, rownames=['Actual'], colnames=['Predicted'],  margins = True)
 sn.heatmap(confusion_matrix, annot=True,fmt='d' )
-plt.savefig('ConfusionMatrix.png', dpi=300, bbox_inches='tight')
-plt.show()
+plt.savefig('../src/templates/ConfusionMatrix.png', dpi=300, bbox_inches='tight')
+# plt.show()
+print('Evaluation done...\n')
