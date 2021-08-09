@@ -1,5 +1,5 @@
 import React from "react";
-import CM from "../src/ConfusionMatrix.png";
+import CM from "../src/templates/ConfusionMatrix.png";
 import Barchart from "../src/Barchart";
 
 import "../src/App.css";
@@ -15,8 +15,10 @@ class Prediction extends React.Component {
             enctype="multipart/form-data"
             id="myFile"
           >
-            <div class="rounded-lg shadow-2xl p-20 form">
-              <header class="cursive font-2xl"></header>
+            <div class="rounded-lg shadow-2xl p-35 form">
+            <label className="text-2xl text-white-100 font-bold cursive">
+              PE Format Malware Checker
+            </label>
               <div class="body" id="drop">
                 <input
                   type="file"
@@ -24,7 +26,7 @@ class Prediction extends React.Component {
                   multiple="multiple"
                   class="text-l text-black"
                 />
-                <button class="mt-10 text-4xl text-black cursive">Start</button>
+                <button class="mt-10 text-3xl text-black cursive">Start</button>
               </div>
             </div>
           </form>
