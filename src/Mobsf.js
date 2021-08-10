@@ -58,7 +58,7 @@ class Mobsf extends React.Component {
     return post(url, formData, config);
   }
 
-  fileScan(file_name, hash, scan_type, status) {
+  fileScan(file_name, hash, scan_type) {
     const url = "http://localhost:8000/api/v1/scan";
     const formData = new FormData();
     formData.append("file_name", file_name);

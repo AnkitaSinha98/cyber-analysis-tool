@@ -120,3 +120,33 @@
     rgba(0, 212, 255, 1) 100%
   );
 }
+
+.cont {
+  display: flex;
+  height: 90vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img-cont {
+  margin-top: 5rem;
+  display: flex;
+
+}
+
+.img1 {
+  margin-right: 15rem;
+  margin-bottom: 10rem;
+}
+
+img {
+  width: 300px;
+}
+
+
+.opa {
+  opacity: 0;
+  width: 10px;
+}

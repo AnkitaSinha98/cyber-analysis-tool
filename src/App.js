@@ -8,7 +8,7 @@ import Mobsf from "./Mobsf";
 import Browsing from "./Browsing";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import NavBar from "../src/NavBar";
-import Domain from "../src/Domain";
+import Stego from "./Stego";
 import Prediction from "../src/Prediction";
 
 const App = () => {
@@ -26,8 +26,8 @@ const App = () => {
             <Route component={Monitoring} path="/monitoring/" />
             <Route component={Mobsf} path="/mobsf" />
             <Route component={Analyse} path="/analyse" />
+            <Route component={Stego} path="/steganography" />
             <Route component={Browsing} path="/safebrowsing" />
-            <Route component={Domain} path="/dns" />
             <Route component={Prediction} path="/prediction" />
           </Switch>
         </div>
